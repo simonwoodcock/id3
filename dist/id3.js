@@ -699,6 +699,7 @@
 								break;
 							}
 						} catch(e) {
+							break;
 							console.log(e);
 						}
 					}
