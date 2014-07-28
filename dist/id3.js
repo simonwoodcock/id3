@@ -925,7 +925,7 @@
 							frameBit,
 							isFrame = true;
 						for(var i = 0; i < 3; i++) {
-							frameBit = dv.getUint8(position + i);
+							try {frameBit = dv.getUint8(position + i);} catch() {};
 							if((frameBit < 0x41 || frameBit > 0x5A) && (frameBit < 0x30 || frameBit > 0x39)) {
 								isFrame = false;
 							}
